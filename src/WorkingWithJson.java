@@ -138,7 +138,7 @@ public class WorkingWithJson {
         GsonBuilder builder = new GsonBuilder();
         Gson gson = builder.create();
 
-        budgets = List.of(gson.fromJson(json, Budget[].class));
+        budgets = List.of(gson.fromJson(json, Budget[].class)); // Convert a Json string array to a list of Budget -- [] indicates that is a list.
 
         System.out.println("Size: " + budgets.size());
         for (Budget budget : budgets) {
